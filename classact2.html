@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="d1">
+        <a href="hello">lpu.in</a>
+        <p class="p1"> ?? ??? ???? ??</p><br>
+        <p class="p2"> ** *** **</p><br>
+        <p class="p3"> @@ @@ </p><br> <br>
+        <a href="#"></a>
+        <button class="btn"> Text </button>
+        <button class="btn2"> Html </button>
+        <button class="btn3"> Image </button>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $(".btn").click(function(){
+        $(".p1").text("Lovely Professional University");
+        $("a").attr(function(){
+            var link=$('a').attr('href');
+            alert(link);
+        })
+    });
+        $(".btn2").click(function(){
+        $(".p2").Html( "<i>India<i>");
+            $("a").attr(function(){
+                var link=$('a').attr('href');
+                alert(link);
+            })
+    });
+    $(".btn3").click(function(){
+        $(".p3").Html( "<img src='color.jpg' height='100' width='100'");
+    });
+    
+});
+
+</script>
+    
+</body>
+</html>

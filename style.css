@@ -1,0 +1,28 @@
+*{
+    margin:0px;
+    padding: 0px;
+    color:aliceblue;
+}
+div{
+    
+    height: 60px;
+    background-color:#161a1a;
+    border-color: aliceblue(255, 255, 255);
+    
+
+}
+body{
+    background-color:rgb(15, 11, 39);
+}
+#logo{
+    color:rgb(173, 173, 108);
+    font-size:25px;
+
+}
+
+button{
+    background-color: yellowgreen;
+}
+a{
+    margin-right: 200px;
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <div id="outerDiv" 
+    style="border: 1px solid black; padding: 20px;background-color: aquamarine; width: 400px; height: 400px;">
+        <div id="innerDiv" 
+        style="border: 1px solid rgb(0, 64, 255); background-color: aqua; height: 200px; width: 200px;">
+            <img src="/image/smile.png" alt="Image" style="width: 100px; height: 100px;">
+            <h2>hello </h2>
+        </div>
+    </div>
+
+    <script>
+        
+        var innerDiv = document.getElementById('innerDiv');
+        //var outerDiv=document.getElementById('outerDiv');
+        
+        var innerDiv = document.getElementById('innerDiv');
+
+    
+        innerDiv.addEventListener('click', function() {
+            alert('You clicked on image');
+        });
+
+        
+    </script>
+</body>
+</html>

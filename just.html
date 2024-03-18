@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h1>
+            jquery's peak
+        </h1>
+        <p id="p1">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, repellendus! Harum cupiditate, autem dolor est temporibus, odio earum inventore nihil iste blanditiis porro hic ea. Obcaecati velit mollitia beatae ut.
+        </p>
+    </div>
+
+    <button id="click">Click for Magic</button>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $("#click").click(function() {
+            $("h1").css("font-size","70px");
+            $("h1").css("color","red");
+            $("p").css("font-size","50px");
+            $("p").css("color","pink");
+            $("body").css("background-color","green");
+            $("h1").css("text-align","center");
+            $("p").css("font-family","italic");
+            $("p").css("text-align","center");
+        });
+    });
+</script>
+</body>
+</html>
+
+$(document).ready(function(){
+    $("body").keydown(function(){
+        $(this).css("background-color","green");
+    })
+    
+    $("button").click(function(){
+        $(this).css({ "background-color": "yellow","border":"3px dashed blue","transform":"rotate(360deg)","transition":"2s"});
+    });
+    
+    $("div").mouseenter(function(){
+        $(this).css("border","5px solid red");
+    })
+    $("h2").dblclick(function(){
+        $(this).css({"font-family":"'Times New Roman', Times, serif","text-align":"center","font-style":"italic"});
+    })
+})
+</script>
+</body>
+</html>

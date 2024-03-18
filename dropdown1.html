@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dropdown</title>
+   
+       
+</head>
+<body>
+
+<div class="dropdown">
+    <button class="dropdown-btn" onclick="toggleDropdown()">Dropdown</button>
+    <div class="dropdown-content" id="dropdownContent">
+        <a href="#" class="dropdown-option">Option 1</a>
+        <a href="#" class="dropdown-option">Option 2</a>
+        <a href="#" class="dropdown-option">Option 3</a>
+    </div>
+</div>
+
+<script>
+    
+    function toggleDropdown() {
+        var dropdownContent = document.getElementById("dropdownContent");
+        if (dropdownContent.style.display === "block") {
+            dropdownContent.style.display = "none";
+        } else {
+            dropdownContent.style.display = "block";
+        }
+    }
+
+    
+    window.onclick = function(event) {
+        if (!event.target.matches('.dropdown-btn')) {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            for (var i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.style.display === "block") {
+                    openDropdown.style.display = "none";
+                }
+            }
+        }
+    }
+</script>
+
+</body>
+</html>

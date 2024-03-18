@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM</title>
+  <style>
+    body {
+      background-color: #f0f0f0;
+    }
+    #myImage {
+      display: none;
+      width: 200px;
+      height: 200px;
+    }
+  </style>
+</head>
+<body>
+
+  <p id="myParagraph">This is a dom paragraph</p>
+  <button id="toggleButton">Toggle Image</button>
+  <button id="textColor">change color</button>
+
+  <img src="/image/smile.png" id="myImage" alt="Placeholder Image">
+
+  <script>
+    
+    const paragraph = document.getElementById('myParagraph');
+    paragraph.textContent = 'here is paragraph';
+  
+    
+    const toggleButton = document.getElementById('toggleButton');
+    toggleButton.style.backgroundColor="pink";
+    const image = document.getElementById('myImage');
+    //const paragraph=document.getElementById('paragraph');
+    toggleButton.addEventListener('click', function() {
+      if (image.style.display === 'block') {
+        image.style.display = 'none';
+      } else {
+        image.style.display = 'block';
+      }
+      image.style.backgroundColor="pink";
+    });
+    
+
+
+    document.body.style.backgroundColor = 'aqua'; 
+
+  
+    const newElement = document.createElement('div');
+    newElement.textContent = 'here is the toggle picture';
+    document.body.appendChild(newElement);
+  </script>
+
+</body>
+</html>

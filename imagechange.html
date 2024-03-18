@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body><div>
+    <image=slide width="300" heigth="300">
+
+    </image>
+</div>
+    
+    <script>
+        var i=0;
+        var image=Arrays();
+        image[0]='im1.jfif';
+        image[1]='im2.jfif';
+        image[2]='im3.jfif';
+        function changeImage(){
+            document.slide.src=images[i];
+            if(i<images.length-1){
+                i++;
+            }
+            else{
+                i=0;
+
+            }
+            setTimeout("changeImage()",1000);
+        }
+        changeImage();
+        
+        
+    </script>
+    
+    
+    
+    
+</body>
+</html>

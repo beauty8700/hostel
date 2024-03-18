@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Gallery</title>
+    <style>
+        .h2{
+            background-color: aquamarine;
+            text-align: center;
+            height: 80px;
+            margin: 0px;
+            padding: 0px;
+        }
+        .h2:hover{
+            background-color: brown;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            height: 50px;
+        }
+      .container {
+        padding-top: 0%;
+        margin-top: 0%;
+        background-color: antiquewhite;
+        height: 100vh;
+      }
+      .thumbnails {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-right:10px;
+        
+      }
+      .thumbnail {
+        width: 100px;
+        height: 100px;
+        margin: 5px;
+        cursor: pointer;
+      }
+      .full-size-image {
+        max-width: 40%;
+        max-height: 40%;
+        margin-left: 400px;
+      }
+      .thumbnail:hover {
+        border: 2px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <h2 class="h2">Image</h2>
+    <div class="container">
+      <div class="thumbnails"></div>
+      <div class="full-image">
+        <img class="full-size-image" src="" alt="" />
+      </div>
+    </div>
+    <script>
+      const thumbnailsContainer = document.querySelector(".thumbnails");
+      const fullSizeImage = document.querySelector(".full-size-image");
+
+      const images = [
+        {
+          src: "/image/amazon.jpg",
+          alt: "Image 1",
+        },
+        {
+          src: "/image/color.jpg",
+          alt: "Image 2",
+        },
+        {
+          src: "/image/dominoes.png",
+          alt: "Image 3",
+        },
+      ];
+
+      function generateThumbnails() {
+        images.forEach((image) => {
+          const thumbnail = document.createElement("img");
+          thumbnail.classList.add("thumbnail");
+         thumbnail.src = image.src;
+          thumbnail.alt = image.alt;
+          thumbnail.addEventListener("click", () => {
+            fullSizeImage.src = image.src;
+            fullSizeImage.alt = image.alt;
+          });
+          thumbnailsContainer.appendChild(thumbnail);
+        });
+      }
+
+      generateThumbnails();
+    </script>
+  </body>
+</html>
+    
+</body>
+</html>

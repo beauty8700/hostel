@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="activity5.css">
+</head>
+<body>
+    <div id="btnn"></div>
+    <button id="btn1"> click here </button>
+    <button id="btn2"></button>
+    <button id="btn3"> </button>
+    <button id="btn4"> </button>
+    
+</body>
+<script>
+    const div=document.getElementById('btnn');
+    div.style.width="300px";
+    div.style.height="300px";
+    div.style.border="10px solid black";
+    div.style.backgroundColor="blue";
+    div.addEventListener("click", function(){
+        this.style.backgroundColor="red";
+    });
+    const btn=document.getElementById('btn1');
+    btn.style.width="100px";
+    btn.style.heigth="100px";
+    btn.style.border="5px solid black";
+    btn.addEventListener("click", function(){
+        this.style.backgroundColor="aqua";
+    })
+
+
+</script>
+</html>

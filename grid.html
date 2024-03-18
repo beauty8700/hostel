@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css">
+    <style>
+        h1:hover{
+            background-color: brown;
+
+        }
+        .grid-container{
+            display:grid;
+            background-color:cadetblue;
+            grid-template-columns:350px 350px 350px 350px;
+            grid-template-rows: 200px 200px 200px;
+            grid-row-gap:30px;
+            grid-column-gap:30px;
+            grid-auto-flow:column;
+        }
+        .grid-item{
+            background-color:aquamarine;
+            border:2px solid black;
+            
+        }
+       /* #item1{
+            grid-row-start:1;
+            grid-column-end:span 2;
+        }*/
+    </style>
+</head>
+<body ><div>
+    
+    <h1 align="center"><img src="/image/smile.png" width="30px" height="30px" align="center" > MY Gallery</h1>
+    </div>
+    <div class="grid-container">
+        <div class="grid-item" id="item1"><img src="/image/color.jpg" width="347px" height="197px">1</div>
+        <div class="grid-item"><img src="/image/dominoes.png" width="347px" height="197px">2</div>
+        <div class="grid-item"><img src="/image/Food-Icon-01.png" width="347px" height="197px"></div>
+        <div class="grid-item"><img src="/image/color.jpg" width="347px" height="197px"></div>
+        <div class="grid-item"><img src="/image/img1.jpg" width="347px" height="197px"></div>
+        <div class="grid-item"><img src="/image/color.jpg" width="347px" height="197px"></div>
+        <div class="grid-item"><img src="/image/dominoes.png" width="347px" height="197px"></div>
+        <div class="grid-item"><img src="/image/img1.jpg" width="347px" height="197px"></div>
+        <div class="grid-item"><img src="/image/dominoes.png" width="347px" height="197px"></div>
+        <div class="grid-item"><img src="https://www.pixelstalk.net/wp-content/uploads/2016/08/Free-Food-Images-Download.jpg" width="347px" height="197px"></div>
+        <div class="grid-item"><img src="https://www.pixelstalk.net/wp-content/uploads/2016/08/Free-Food-Images-Download.jpg" width="347px" height="197px"></div>
+        <div class="grid-item"><img src="https://getwallpapers.com/wallpaper/full/2/9/7/494243.jpg" width="347px" height="197px"></div> 
+    </div>
+    
+</body>
+</html>

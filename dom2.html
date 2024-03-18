@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Toggle Paragraph Visibility</title>
+<style>
+  .hidden {
+    display: none;
+  }
+</style>
+</head>
+<body>
+<p id="paragraph">Hello I am beauty <br> I studying in lpu <br>I am persuing btech <br> </p>
+<button onclick="toggleParagraph()">click here to hide</button>
+
+<script>
+  function toggleParagraph() {
+    var paragraph = document.getElementById('paragraph');
+    paragraph.classList.toggle('hidden');
+  }
+</script>
+</body>
+</html>

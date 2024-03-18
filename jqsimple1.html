@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    
+</head>
+<body>
+    <div id="d1">
+        <p id="p1">Hello </p>
+        <h1> Welcome to jquery</h1>
+        <ul>
+            <li>fruits</li>
+            <li>apples</li>
+            <li>apples</li>
+            <li>guavava</li>
+        </ul>
+        
+        </div>
+        <script>
+            $(document).ready(function(){
+                $('#d1').css("border","dashed");
+                $('#d1').css("backgroundColor","yellow");
+                $("h1").css("font-size","100px");
+                $("h1").css("color","aqua");
+                $('#d2').css("font-size","40px");
+                $("li").css("font-size","20px");
+                $("li").css("color","aqua");
+                $('#d2').css("color","black");
+                $("ul li:even").css("color","red");
+                $("ul li:odd").css("border","2px solid");
+                var a=$('#p1').html();
+                alert(a);
+            });
+            </script>
+    
+</body>
+</html>

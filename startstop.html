@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+    <button onclick="start()" id="p" >start</button>
+    <button onclick="stop()">stop</button>
+    <p id="demo"></p>
+    <script>
+        var i;
+        function start(){
+            i=setInterval(datetime,1000);
+        }
+        function datetime(){
+            document.getElementById("demo").innerHTML=new Date();
+        }
+        function stop(){
+            clearInterval(i)
+        }
+    </script>
+    
+    
+</body>
+</html>
